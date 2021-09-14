@@ -3,7 +3,7 @@ from asyncio import Lock
 from dataclasses import dataclass
 from typing import Dict, Optional, Tuple
 
-from app.utils.backend import Backend
+from app.utils.redis.backend import Backend
 
 
 @dataclass

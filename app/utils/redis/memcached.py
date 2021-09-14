@@ -2,7 +2,7 @@ from typing import Tuple
 
 from aiomcache import Client
 
-from app.utils.backend import Backend
+from app.utils.redis.backend import Backend
 
 
 class MemcachedBackend(Backend):

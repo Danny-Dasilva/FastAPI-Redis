@@ -1,8 +1,8 @@
 from functools import wraps
 from typing import Callable, Optional, Type
 
-from fastapi_cache import FastAPICache
-from fastapi_cache.coder import Coder
+from app.utils.cache import FastAPICache
+from app.utils.coder import Coder
 
 
 def cache(

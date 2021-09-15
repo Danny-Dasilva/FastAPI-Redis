@@ -3,9 +3,9 @@ from fastapi import FastAPI
 from starlette.requests import Request
 from starlette.responses import Response
 import uvicorn
-from app.utils.cache import FastAPICache
-from app.utils.redis.redis import RedisBackend
-from app.utils.redis_decorator import cache
+from utils.cache import FastAPICache
+from utils.redis.redis import RedisBackend
+from utils.redis_decorator import cache
 
 app = FastAPI()
 
@@ -16,8 +16,10 @@ async def get_cache():
 
 
 @app.get("/")
-@cache(expire=60)
+@cache(expire=10)
 async def index(request: Request, response: Response):
+    from time import sleep
+    sleep(3)
     return dict(hello="world")
 
 

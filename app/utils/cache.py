@@ -1,7 +1,7 @@
 from typing import Callable
 
-from app.utils.coder import Coder, JsonCoder
-from app.utils.key_builder import default_key_builder
+from utils.coder import Coder, JsonCoder
+from utils.key_builder import default_key_builder
 
 
 class FastAPICache:

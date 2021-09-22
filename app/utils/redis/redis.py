@@ -2,7 +2,7 @@ from typing import Tuple
 
 from aioredis import Redis
 
-from utils.redis.backend import Backend
+from app.utils.redis.backend import Backend
 
 
 class RedisBackend(Backend):

@@ -3,9 +3,9 @@ from fastapi import FastAPI
 from starlette.requests import Request
 from starlette.responses import Response
 import uvicorn
-from utils.cache import FastAPICache
-from utils.redis.redis import RedisBackend
-from utils.redis_decorator import cache
+from app.utils.cache import FastAPICache
+from app.utils.redis.redis import RedisBackend
+from app.utils.redis_decorator import cache
 
 app = FastAPI()
 

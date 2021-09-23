@@ -48,8 +48,9 @@ client = TestClient(app)
 
 
 def test_api():
-    client.post(REFRESH_URL)
+    client.get(REFRESH_URL)
     res = client.get(URL)
+    breakpoint()
     # summary = res.json()
 
     assert res.status_code == 200

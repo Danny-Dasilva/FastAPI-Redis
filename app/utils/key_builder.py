@@ -13,7 +13,7 @@ def default_key_builder(
     args: Optional[tuple] = None,
     kwargs: Optional[dict] = None,
 ):
-    from utils.cache import FastAPICache
+    from app.utils.cache import FastAPICache
 
     prefix = f"{FastAPICache.get_prefix()}:{namespace}:"
     cache_key = (

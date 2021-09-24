@@ -12,5 +12,5 @@ jobs:
       - name: Prints the current branch name
         run: echo "$GITHUB_BRANCH"
         env:
-          GITHUB_BRANCH: ${{ github.head_ref }}
+          GITHUB_BRANCH: ${{ github.ref }}
 

@@ -23,11 +23,11 @@ jobs:
         run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
         id: myref
 
-      - name: Prints the current branch nameadsf
-        run: echo "${GITHUB_BRANCH##*/}"
-        env:
-          GITHUB_BRANCH: ${{ github.head_ref }}
-      - name: Prints the current branch name
-        run: echo "${GITHUB_BRANCH##*/}"
-        env:
-          GITHUB_BRANCH: ${{ github.ref }}
+      # - name: Prints the current branch nameadsf
+      #   run: echo "${GITHUB_BRANCH##*/}"
+      #   env:
+      #     GITHUB_BRANCH: ${{ github.head_ref }}
+      # - name: Prints the current branch name
+      #   run: echo "${GITHUB_BRANCH##*/}"
+      #   env:
+      #     GITHUB_BRANCH: ${{ github.ref }}

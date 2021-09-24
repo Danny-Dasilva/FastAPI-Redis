@@ -17,10 +17,6 @@ jobs:
         shell: bash
         run: echo "${{ GITHUB_REF#refs/heads/ }}"
 
-      - name: Get the current branch name
-        shell: bash
-        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
-        id: myref
 
       # - name: Prints the current branch nameadsf
       #   run: echo "${GITHUB_BRANCH##*/}"

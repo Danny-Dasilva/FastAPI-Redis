@@ -8,13 +8,14 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v1
-      - name: Branch name
-        run: echo running on branch ${{ env.GITHUB_HEAD_REF }}
+      # - name: Branch name
+      #   run: echo running on branch ${{ env.GITHUB_HEAD_REF }}
 
-     
-      # - name: Prints the current branch name ex
-      #   shell: bash
-      #   run: echo "${GITHUB_REF#refs/heads/}"
+      # - name: Branch3 name
+      #   run: echo running on branch ${{ GITHUB_REF##*/ }}
+      - name: Prints the current branch name ex
+        shell: bash
+        run: echo "${GITHUB_REF#refs/heads/}"
 
       # - name: Get the current branch name
       #   shell: bash

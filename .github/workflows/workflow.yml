@@ -13,9 +13,9 @@ jobs:
 
       # - name: Branch3 name
       #   run: echo running on branch ${{ GITHUB_REF##*/ }}
-      - name: Prints the current branch name ex
-        shell: bash
-        run: echo "${{ GITHUB_REF#refs/heads/ }}"
+      # - name: Prints the current branch name ex
+      #   shell: bash
+      #   run: echo "${{ GITHUB_REF#refs/heads/ }}"
 
 
       # - name: Prints the current branch nameadsf

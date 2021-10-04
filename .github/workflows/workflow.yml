@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
 env:
-  BRANCH: ${GITHUB_REF#refs/heads/}
+  BRANCH: ${{ github.head_ref }}
 jobs:
   build:
     runs-on: ubuntu-latest
